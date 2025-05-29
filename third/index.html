@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Форма для планшета</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <p class="header__worker">Тишин Егор Николаевич</p>
+        <nav class="header__nav">
+          <a class="nav-link" href="#">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-skip-back-icon lucide-skip-back"
+            >
+              <polygon points="19 20 9 12 19 4 19 20" />
+              <line x1="5" x2="5" y1="19" y2="5" />
+            </svg>
+          </a>
+          <a class="nav-link" href="#">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-bolt-icon lucide-bolt"
+            >
+              <path
+                d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"
+              />
+              <circle cx="12" cy="12" r="4" />
+            </svg>
+          </a>
+          <a class="nav-link" href="#">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-ellipsis-vertical-icon lucide-ellipsis-vertical"
+            >
+              <circle cx="12" cy="12" r="1" />
+              <circle cx="12" cy="5" r="1" />
+              <circle cx="12" cy="19" r="1" />
+            </svg>
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="content">
+      <div class="container content__container">
+        <div class="tabs">
+          <button class="tabs__item tabs__item--active">Процесс</button>
+          <button class="tabs__item">Функции</button>
+        </div>
+
+        <form action="#" class="form content__form">
+          <label for="barcode" class="form__label">Отсканируйте бирку</label>
+          <input
+            type="text"
+            class="form__input"
+            id="barcode"
+            placeholder="Штрихкод"
+          />
+          <button type="submit" class="form__button">Выполнить оперцию</button>
+        </form>
+
+        <div class="info content__info">
+          <div class="info__title">
+            <span class="info__lathe">Токарная с ЧПУ 4 | Б</span>
+            <span class="info__date">20.06.2024 Дневная смена</span>
+          </div>
+          <div class="table info__table">
+            <div class="table__row table__row--header">
+              <div class="table__cell">Изготовлено</div>
+              <div class="table__cell">Несоответствующих</div>
+              <div class="table__cell">Годных</div>
+            </div>
+            <div class="table__row">
+              <div class="table__cell table__cell--yellow">25</div>
+              <div class="table__cell table__cell--red">2</div>
+              <div class="table__cell table__cell--green">23</div>
+            </div>
+          </div>
+        </div>
+
+        <button class="content__exit">Закончить работу</button>
+      </div>
+    </main>
+  </body>
+</html>
