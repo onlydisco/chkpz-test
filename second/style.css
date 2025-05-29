@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+:root {
+  --blue: #315ab6;
+  --light-gray: #e6e5eb;
+  --lighter-gray: #f1f1f1;
+  --white: #ffffff;
+  --black: #333333;
+  --radius: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background-color: var(--light-gray);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 0;
+}
+
+.title-block {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.title {
+  color: var(--blue);
+  font-size: 42px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.table {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  text-align: left;
+}
+
+.table__row {
+  display: flex;
+  gap: 2px;
+  padding: 0 20px;
+  width: 100%;
+  font-size: 22px;
+  font-weight: 500;
+  background-color: var(--white);
+  border-radius: var(--radius);
+}
+
+.table__row--header {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--white);
+  background-color: var(--black);
+}
+
+.table__cell {
+  padding: 20px;
+}
+
+.table__cell--lathe {
+  min-width: 14%;
+}
+.table__cell--operator {
+  min-width: 20%;
+}
+.table__cell--reason {
+  flex-grow: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.table__row:hover {
+  color: var(--blue);
+  background-color: var(--lighter-gray);
+}
+
+.table__row--header:hover {
+  color: var(--white);
+  background-color: var(--black);
+}

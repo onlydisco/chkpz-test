@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Сменная выработка станков №3</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="title-block">
+          <div class="logo">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="80"
+              height="50"
+              viewBox="0 0 86 54"
+              fill="none"
+            >
+              <path
+                d="M39.2679 0L35.3899 15.1144C34.5944 17.6998 31.7107 19.8874 28.827 19.8874H28.5287C25.5456 19.8874 23.7557 17.6998 24.4518 15.015L28.3298 0.0994371H8.04466L2.17787 23.0694H56.8683L60.9452 7.06004L68.9996 26.2514L51.9959 41.9625L55.3767 28.8368H0.686313L0.288564 30.4278C-1.10356 35.9962 2.67506 40.4709 8.74072 40.4709H28.827L25.645 53H59.1554L85.5062 28.5385L73.5737 0H39.2679Z"
+                fill="#315AB6"
+              />
+            </svg>
+          </div>
+
+          <h1 class="title">
+            Сменная выработка<br />
+            станков №3
+          </h1>
+        </div>
+
+        <div class="legend">
+          <span class="legend__item legend__item--green">изготовлено</span>
+          <span class="legend__item legend__item--green">&nbsp/&nbsp</span>
+          <span class="legend__item legend__item--gray">осталось</span>
+        </div>
+      </header>
+
+      <main class="content" id="content">
+        <div class="card">
+          <span class="card__number">2-3-14</span>
+          <span class="card__lathe"
+            >Токарная<br />
+            с ЧПУ 0</span
+          >
+          <div class="card__donut-container">
+            <div class="card__donut" id="chart0"></div>
+            <div class="card__center">
+              <span class="card__percent">75%</span>
+            </div>
+          </div>
+          <span class="card__name">Александров И.И.</span>
+        </div>
+      </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

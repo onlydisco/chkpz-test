@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+:root {
+  --blue: #315ab6;
+  --green: #009846;
+  --gray: #b2b3b3;
+  --light-gray: #e6e5eb;
+  --white: #ffffff;
+  --black: #000000;
+  --radius: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background-color: var(--light-gray);
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 0;
+}
+
+.title-block {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.title {
+  color: var(--blue);
+  font-size: 32px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.legend {
+  padding: 20px 30px;
+  border-radius: var(--radius);
+  background-color: var(--white);
+}
+
+.legend__item {
+  font-size: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.legend__item--green {
+  color: var(--green);
+}
+
+.legend__item--gray {
+  color: var(--gray);
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding-bottom: 20px;
+}
+
+.card {
+  position: relative;
+  padding: 60px;
+  width: 345px;
+  height: 345px;
+  background-color: var(--white);
+  border-radius: var(--radius);
+}
+
+.card__number {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.card__lathe {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  text-align: right;
+}
+
+.card__donut-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.card__donut {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: conic-gradient(var(--green) 0% 75%, var(--gray) 75% 100%);
+}
+
+.card__donut:hover {
+  background: conic-gradient(var(--blue) 0% 75%, var(--gray) 75% 100%);
+}
+
+.card__center {
+  position: absolute;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+  background-color: var(--white);
+}
+
+.card__percent {
+  font-size: 28px;
+  color: var(--black);
+  font-weight: 800;
+}
+
+.card__name {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: var(--blue);
+  font-size: 18px;
+  font-weight: 600;
+}
