@@ -2,7 +2,7 @@ $(document).ready(function () {
   let barcodeValue;
   const inputElement = $('#barcode');
   const buttonElement = $('.form__button');
-  formElemet = $('.form');
+  const formElemet = $('.form');
 
   if (!barcodeValue) {
     buttonElement.prop('disabled', true);
@@ -12,9 +12,9 @@ $(document).ready(function () {
     barcodeValue = $(this).val().trim();
 
     if (barcodeValue) {
-      buttonElement.removeAttr('disabled');
+      buttonElement.prop('disabled', false);
     } else {
-      buttonElement.attr('disabled', 'disabled');
+      buttonElement.prop('disabled', true);
     }
   });
 
